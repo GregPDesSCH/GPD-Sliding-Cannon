@@ -6,8 +6,8 @@ public class ApplicationManager : MonoBehaviour
     // Singleton Instance
     public static ApplicationManager applicationManager;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start ()
     {
         if (applicationManager == null)
             applicationManager = this;
@@ -15,8 +15,8 @@ public class ApplicationManager : MonoBehaviour
             Destroy(gameObject);
     }
 	
-	// Update is called once per frame
-	void Update ()
+    // Update is called once per frame
+    void Update ()
     {
         // Closes the application when the user presses the Back button.
         if (Input.GetKeyDown(KeyCode.Escape))
